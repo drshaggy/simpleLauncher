@@ -1,11 +1,9 @@
-import 'package:simpleLauncher/ui/views/start_up/home_view_model.dart';
-import 'package:simpleLauncher/ui/widgets/dumb/app_drawer.dart';
+import 'package:simpleLauncher/ui/views/home/home_view_model.dart';
 import 'package:simpleLauncher/ui/widgets/dumb/apps.dart';
 import 'package:simpleLauncher/ui/widgets/dumb/apps_hidden.dart';
 import 'package:simpleLauncher/ui/widgets/dumb/custom_scroll_behaviour.dart';
 import 'package:simpleLauncher/ui/widgets/dumb/custom_scroll_physics.dart';
 import 'package:simpleLauncher/ui/widgets/dumb/floating_settings_button.dart';
-
 import 'package:simpleLauncher/ui/widgets/smart/clock_view.dart';
 import 'package:stacked/stacked.dart';
 import 'package:flutter/material.dart';

@@ -1,13 +1,17 @@
 import 'package:simpleLauncher/services/animation_service.dart';
 import 'package:simpleLauncher/ui/views/list_of_apps/list_of_apps_view.dart';
+import 'package:simpleLauncher/ui/views/set_up/set_up_view.dart';
 import 'package:simpleLauncher/ui/views/settings/settings_view.dart';
-import 'package:simpleLauncher/ui/views/start_up/home_view.dart';
+import 'package:simpleLauncher/ui/views/home/home_view.dart';
+import 'package:simpleLauncher/ui/views/start_up/start_up_view.dart';
 import 'package:stacked/stacked_annotations.dart';
 import 'package:stacked_services/stacked_services.dart';
 
 @StackedApp(
   routes: [
-    MaterialRoute(page: HomeView, initial: true),
+    MaterialRoute(page: StartUpView, initial: true),
+    MaterialRoute(page: SetUpView),
+    MaterialRoute(page: HomeView),
     MaterialRoute(page: SettingsView),
     MaterialRoute(page: ListOfAppsView),
   ],

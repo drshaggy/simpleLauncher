@@ -32,6 +32,7 @@ dependencies:
   fluttertoast:
   system_settings:
   percent_indicator:
+  battery:
 
 
   # The following adds the Cupertino Icons font to your application.
