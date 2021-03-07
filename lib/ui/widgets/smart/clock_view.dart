@@ -8,6 +8,7 @@ class ClockView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ViewModelBuilder<ClockViewModel>.reactive(
+      onModelReady: (model) => model.initialise(),
       builder: (context, model, child) => AnimatedOpacity(
         opacity: model.getOpacity(),
         duration: Duration(microseconds: 1),
@@ -16,7 +17,7 @@ class ClockView extends StatelessWidget {
           child: CircularPercentIndicator(
             progressColor: Colors.white,
             backgroundColor: Colors.white10,
-            percent: 0.75,
+            percent: model.batteryLevel,
             lineWidth: 3,
             radius: 149,
             center: Column(
