@@ -24,7 +24,7 @@ class AppDrawer extends StatelessWidget {
             itemCount: apps?.length,
             itemBuilder: (context, index) {
               Application app = apps[index];
-              return FlatButton(
+              return TextButton(
                 onPressed: () => DeviceApps.openApp(app.packageName),
                 child: ListTile(
                   title: Text('${app.appName}', style: styles.apps),

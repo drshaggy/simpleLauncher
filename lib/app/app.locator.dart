@@ -10,10 +10,12 @@ import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
 
 import '../services/animation_service.dart';
+import '../services/application_service.dart';
 
 final locator = StackedLocator.instance;
 
 void setupLocator() {
   locator.registerLazySingleton(() => NavigationService());
   locator.registerLazySingleton(() => AnimationService());
+  locator.registerLazySingleton(() => ApplicationService());
 }

@@ -33,6 +33,8 @@ dependencies:
   system_settings:
   percent_indicator:
   battery:
+  shared_preferences: 
+  permission_handler: 
 
 
   # The following adds the Cupertino Icons font to your application.

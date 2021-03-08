@@ -6,6 +6,7 @@ class StartUpView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ViewModelBuilder<StartUpViewModel>.reactive(
+      onModelReady: (model) => model.initialise(),
       builder: (context, model, child) => Container(),
       viewModelBuilder: () => StartUpViewModel(),
     );

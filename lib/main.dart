@@ -5,8 +5,8 @@ import 'package:stacked_services/stacked_services.dart';
 import 'package:flutter/services.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom]);
+  //WidgetsFlutterBinding.ensureInitialized();
+  //SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom]);
   setupLocator();
   runApp(MyApp());
 }

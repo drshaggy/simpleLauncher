@@ -1,4 +1,5 @@
 import 'package:simpleLauncher/services/animation_service.dart';
+import 'package:simpleLauncher/services/application_service.dart';
 import 'package:simpleLauncher/ui/views/list_of_apps/list_of_apps_view.dart';
 import 'package:simpleLauncher/ui/views/set_up/set_up_view.dart';
 import 'package:simpleLauncher/ui/views/settings/settings_view.dart';
@@ -17,7 +18,8 @@ import 'package:stacked_services/stacked_services.dart';
   ],
   dependencies: [
     LazySingleton(classType: NavigationService),
-    LazySingleton(classType: AnimationService)
+    LazySingleton(classType: AnimationService),
+    LazySingleton(classType: ApplicationService),
   ],
 )
 class AppSetup {
